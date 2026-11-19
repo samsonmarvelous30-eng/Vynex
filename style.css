@@ -1,0 +1,133 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #090d18;
+    color: white;
+    min-height: 100vh;
+}
+
+.welcome {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 24px;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse at 80% 35%, #18264a 0%, transparent 55%),
+        #090d18;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #637cff;
+}
+
+.nav-label {
+    font-size: 9px;
+    color: #8d98b2;
+    letter-spacing: 2px;
+}
+
+.hero {
+    margin: auto 0;
+    max-width: 500px;
+    padding: 60px 0;
+}
+
+.hero-tag {
+    color: #8195ff;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+h1 {
+    font-size: clamp(43px, 12vw, 65px);
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 22px;
+}
+
+h1 span {
+    display: block;
+    color: #7188ff;
+}
+
+.hero p {
+    color: #a2acc0;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 330px;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 35px;
+    max-width: 340px;
+}
+
+button {
+    width: 100%;
+    min-height: 54px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.login-btn {
+    background: #7188ff;
+    color: white;
+    border: none;
+}
+
+.signup-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid #3b4966;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+.bottom-text {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    color: #64718c;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+}
+
+@media (min-width: 700px) {
+    .welcome {
+        padding: 40px 8%;
+    }
+
+    .hero {
+        margin-left: 5%;
+    }
+}
